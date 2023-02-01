@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+          <style>
+
+            .container{
+               background-color:white;
+               text-align:center;
+            }
+            .topnav {
+                background-color: #333;
+                overflow: hidden;
+                margin-top:16px;
+            }
+
+            
+            .topnav a {
+              float: left;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 16px 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+
+
+            .topnav a:hover {
+               background-color: #ddd;
+               color: black;
+            }
+
+
+            .topnav a.active {
+              background-color: #04AA6D;
+              color: white;
+            }
+            .container1{
+                padding:16px;
+                font-size:25px;
+                
+                text-align:center;
+            }
+            .marquee{
+              background-color:yellow;
+              
+              
+            }
+            .paper{
+              margin-top:10px;
+              margin-left:840px;
+            }
+            .main {
+              font-size: 10px;
+              font-weight: bold;
+              margin-left:20px;
+              
+               }
+           .ff {
+            margin-left: 20px;
+            border: 10px solid green;
+            width: 100px;
+            height: 150px;
+            text-align: center;
+            padding: 10px }
+
+            * {box-sizing: border-box;}
+
+            .img-zoom-container {
+              position: relative;
+            }
+
+            .img-zoom-lens {
+              position: absolute;
+              border: 1px solid #d4d4d4;
+             /*set the size of the lens:*/
+              width: 40px;
+              height: 40px;
+              }
+            .ggi{
+              margin-top:10px;
+              margin-left:32px;
+            }
+            .label{
+              background-color:gray;
+              margin-top:5px;
+              height:30px;
+              margin-left:30px;
+              margin-right:30px;
+              text-align:center;
+            }
+            .form{
+              text-align:center;
+              background-color:gray;
+              border-radius:10px;
+              margin-left:10px;
+              margin-right:10px;
+              margin-top:10px;
+              
+
+            }
+            .table,th,td{
+              width:300px;
+              border:2px solid;
+              margin-top:10px;
+              text-align:center;
+            } 
+            .aws{
+              
+              bottom: 10px;
+              padding:30px;
+              text-align:center;
+              margin-top:10px;
+            
+              background-color:gray;
+            }
+            
+
+ 
+           
+
+            
+           
+           
+          </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="/">Home</a>
+            <a href="menu">Courses</a>
+            <a href="python">Python</a>
+            <a href="about">About</a>
+        </div>
+        <div class="marquee">
+          <marquee >Python||Data Science||Machine Learning||MySql||Big Data</marquee>
+        </div
+        <div >
+          <form class="paper" >
+            <input type="search" placeholder="search">
+            <button type="sumbit">search</button>
+
+          </form>
+
+        </div>
+        <div class="label">
+          <label style="color:white;">Python Certification Courses Training</label>
+
+        </div>
+        <div>
+          <b style="margin-left:20px;" >
+            Overview
+          </b><br>
+
+          <blockquote><i style="margin-left:20px;">Python is one of the most popular programming languages out there in the market which developers use to create various applications. There are many certifications available in Python, and they showcase different levels and areas of expertise in the programming language. This Python programming language is used in a lot of fields outside of software development, such as web development, game and app development, numeric computing, education and other business applications. A Python certification training course can be really beneficial in gaining a competitive advantage over one’s peers. With our Python Training Course, students learn to run pyton codes using various options like anaconda/jupyter/iptyhon, with a focus on Jupyter. Check the below schedule for various Python Certification training to enrol now.</i></blockquote>
+          <b style="margin-left:20px;">Python Certification Training Overview </b>
+          <blockquote><i style="margin-left:20px;">Python is one of the most trustworthy programming languages because it is old and matured and can be used in multiple fields. Developers, engineers, and organizations prefer to use Python because of its intuitive nature and the ease of learning. Companies of all sizes have used and continue to use this programming language for all their coding and web or app development needs. 
+ 
+            Certifications in Python have become a popular means to understand the capability of an individual in the language. There are various Python certification training courses available for learners and developers to upskill themselves and gain a competitive advantage in the job market.
+             
+            Some of the most popular certification courses that hold value in the eye of the employers are listed below:
+             
+          </i></blockquote>
+          <li style="margin-left:20px;"> Introduction to Python - (Official)</li>
+          <li style="margin-left:20px;">Advanced Python - (Official)</li>
+          <li style="margin-left:20px;" >Advanced Python Programming </li>
+          <li style="margin-left:20px;">Full Stack Web Developer with Python</li>
+
+        </div>
+
+        <div class="form">
+
+          <form action="/" method="post">
+            {% csrf_token %}
+           <b><label style="color:yellow;">Request for more Information </label><br><b>
+           <input style="padding:12px; margin:10px; border-radius:9px;" placeholder="Name" type="Name" Name="Name" required >
+         
+           <input style="padding:12px; margin:10px;border-radius:9px; " placeholder="Email" type="Email"  Name="Email"required > <br>
+           <input style="padding:12px; margin:10px;border-radius:9px;"  placeholder="Phone" type="text" Name="Phone">
+           <input style="padding:12px; margin:10px;border-radius:9px; "  placeholder="Country" type="text" required Name="Country"><br>
+
+           <input style="padding:12px; margin:10px;border-radius:9px;"  placeholder="city" type="text" required Name="City" >
+           <input style="padding:12px;margin:10px;border-radius:9px;" placeholder="Query/Your Requerment" type="box" Name="Query"><br>
+           <button  style="padding:9px;margin:10px;border-radius:9px; padding:15px; color:green;" type="sumbit">Sumbit</button>
+          </form>
+
+        </div>
+        <div >
+          <table style="margin-top:10px; margin-left:10px;">
+            <label style="margin-left:10px;">Course Fee Details</label>
+            <tr>
+              <th style="color:blue;">Course</th>
+              <th style="color:blue;">Durations</th>
+              <th style="color:blue;">Price</th>
+            </tr>
+            <tr>
+              <td>Python Full Stack Developer</td>
+              <td>4Month</td>
+              <td>Rs.20000</td>
+            </tr>
+            
+          </table>
+        </div>
+        <div class="aws"> 
+          <b> Powerd by :-pythonpoint313  2023</b>
+
+        </div>
+        
+
+
+        
+      
+        
+
+        
+        
+        
+        
+    </body>
+</html>
